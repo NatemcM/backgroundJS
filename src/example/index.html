@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background JS</title>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-xs-12 col-sm-6">
+                <div class="bgImg" data-src="img/maxime-valcarce-269439-unsplash.jpg" data-height="40vh" data-size="cover"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="bgImg" data-src="img/tyler-lastovich-285380-unsplash.jpg" data-height="15rem"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 mb-2">
+                <div class="elm" data-url="img/jon-tyson-589851-unsplash.jpg" data-attach="scroll" data-y-axis="800px" data-pos="bottom"
+                    data-bigness="cover"></div>
+            </div>
+            <div class="col-xs-12">
+                <pre><code>
+                    $('.elm').dataBg({ 
+                        dataSrc: 'url', 
+                        dataAttachment: 'attach', 
+                        dataHeight: 'y-axis', 
+                        dataPosition: 'pos', 
+                        dataSize: 'bigness'
+                    });
+                </code></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.bgImg').dataBg();
+
+        $('.elm').dataBg({
+            dataSrc: 'url',
+            dataAttachment: 'attach',
+            dataHeight: 'y-axis',
+            dataPosition: 'pos',
+            dataSize: 'bigness'
+        });
+    </script>
+</body>
+
+</html>
