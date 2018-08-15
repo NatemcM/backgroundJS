@@ -1,5 +1,5 @@
 # backgroundJS
-We're programmers, we're lazy! So instead of writting out inline CSS why not just define some data-attributes in your HTML. backgroundJS is a super simple jQuery plugin (for now, a standalone JS version is in the works) that allows you to use HTML5 data attributes to define a background image.
+We're programmers, we're lazy! So instead of writing out inline CSS why not just define some data-attributes in your HTML. backgroundJS is a super simple jQuery plugin (for now, a standalone JS version is in the works) that allows you to use HTML5 data attributes to define a background image.
 
 ## Usage 
 ```HTML 
@@ -41,3 +41,8 @@ Already have a plugin that uses the `data-src` attribute? No problem, just tell 
         data-do-over="repeat">
     </div>
 ```
+
+## Roadmap 
+- Lazy loading 
+- Stand alone JS version
+- CSS Overrides	
